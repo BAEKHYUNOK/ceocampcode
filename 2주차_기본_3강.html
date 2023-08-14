@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Basic Selectors</title>
+	 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(document).ready(()=> {
+		// let userList = [
+		// 	"김길동",
+		// 	"최길동",
+		// 	"나길동",
+		// 	"국길동",
+		// 	"이길동"
+		// ];
+		//
+		// for(i=0; i < userList.length ; i++) {
+		// 	$("#userList").append("<div>" + userList[i]+"</div>");
+		// }
+
+		let userList = [
+			{name:"김길동",age:10, type:"0"},
+			{name:"최길동",age:15, type:"A"},
+			{name:"나길동",age:13, type:"B"},
+			{name:"국길동",age:12, type:"AB"},
+			{name:"이길동",age:15, type:"0"},
+		];
+
+		for(i=0; i < userList.length ; i++) {
+			$("#userList").append("<div>" + userList[i]["name"]+"/"+ userList[i]["age"]+"/"+ userList[i]["type"]+"</div>");
+		}
+
+
+	});
+	 </script>
+</head>
+
+<body>
+	<div id ="userList">	</div>
+</body>
+</html>

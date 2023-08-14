@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Basic Selectors</title>
+	 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+	 $(document).ready(()=> {
+		 	 $("button").on("click", ()=> {
+				 // alert($("h1").html());
+				 // let newText =$("h1").html();
+				 // $("#text").html($("h1").html());
+				 $("#list").append("<li>새로추가</li>");
+			 });
+	 	 });
+	 </script>
+</head>
+
+<body>
+	<h1>.html() 메소드 </h1>
+		<p> 버튼을 우르면 다음 단락에 새로운 텍스트를 설정할 수 있지! </p>
+		<button> 새로운텍스트 뿅 </button>
+		<p id="text"> </p>
+
+		<h1 id="app">.append() 메소드</h1>
+		<ul id ="list">
+			<li> 첫번째 </li>
+			<li> 두번째 </li>
+			<li> 세번째 </li>
+		</ui>
+		<button id="btn_app"> 아이템 추가 </button>
+</body>
+</html>
